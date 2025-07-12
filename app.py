@@ -10,8 +10,8 @@ from langchain_core.output_parsers import StrOutputParser
 app = Flask(__name__)
 app.secret_key = "your-secret-key-here" 
 
-llm = ChatGroq(groq_api_key= "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" , model= "llama3-70b-8192" , temperature= 0.05 )
-pc = Pinecone(api_key="pcsk_4mtitk_FFoqWB8GzWkwJTosetWXVEDowmyd5ZyWBHfZBaBjxFiDUs4LcEqQhYGx5ECJ5Hx")
+llm = ChatGroq(groq_api_key= "" , model= "llama3-70b-8192" , temperature= 0.05 )
+pc = Pinecone(api_key="")
 index_name = "therapy-bot"
 
 dense_index = pc.Index(index_name)
